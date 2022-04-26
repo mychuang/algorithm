@@ -1,5 +1,5 @@
 # Bitwise quick notes of Python
-Refer: https://realpython.com/python-bitwise-operators/
+Refer: https://realpython.com/python-bitwise-operators/ <p>
 The bitwise in C can see [bitwise_c](bitwise_c.md)
 ## operator
 
