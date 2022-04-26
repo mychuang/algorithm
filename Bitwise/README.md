@@ -102,4 +102,47 @@ a = 156
 print(bin(~a & 255)) # output: 0b1100011
 print(~a & 255) # output: 99
 ```
-Note: Python 沒有無符號整數，需要遮罩來完成此轉換 
+Note: Python 沒有無符號整數，需要遮罩(&255)來完成此轉換
+
+## Bitwise Shift Operators
+常用作掩碼(遮罩)和提高數學運算
+<p>
+
+### Left Shift
+left shift operator (<<) : 向左移動位數，並補零。<p>
+Note: 每向左移動一位，便會加倍一次。
+| Expression | Binary Value | Decimal Value|
+|------------|--------------|--------------|
+| a          |  100111      | 39           |
+| a << 1     |  1001110     | 78           |
+| a << 2     |  10011100    | 156          |
+| a << 3     |  100111000   | 312          |
+
+多數情況下，我們需要將length of a bit pattern限制在8，這是標準字節長度<p>
+一樣能透過遮罩(&255)來完成此轉換<p>
+```python
+print(39 << 3) # Dec: 312
+print((39 << 3) & 255) # Dec: 56
+```
+### Right Shift
+right shift operator (>>) : 向右推進指定位數，最右邊的被丟棄。<p>
+Note: 每向右移動一位，便會減半一次。
+| Expression | Binary Value | Decimal Value|
+|------------|--------------|--------------|
+| a          |  100111000   | 312          |
+| a >> 1     |  10011100    | 156          |
+| a >> 2     |  1001110     | 78           |
+| a >> 3     |  100111      | 39           |
+
+```python
+print(5 >> 1)  # Bitwise right shift: 2
+print(5 // 2)  # Floor division (integer division): 2
+print(5 / 2)   # Floating-point division: 2.5
+```
+Note: 正數右移最終為0，負數右移最終為-1
+
+```python
+print(2 >> 5)  # Dec: 0
+print(-2 >> 5)  # Dec: -1
+```
+
