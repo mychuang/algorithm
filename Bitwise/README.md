@@ -72,7 +72,7 @@ print(a&b) # output: 20
 
 ## Bitwise OR
 進行 logical disjunction，如下公式 <p>
- (a | b)<sub>i</sub> = a<sub>i</sub>+b<sub>i</sub>-(a<sub>i</sub>Xb<sub>i</sub>) <p>
+ (a | b)<sub>i</sub> = a<sub>i</sub> + b<sub>i</sub> - (a<sub>i</sub> X b<sub>i</sub>) <p>
  簡單來看，每個 bit values，若有至少一個為1，就返回1
 
 For example:<p>
