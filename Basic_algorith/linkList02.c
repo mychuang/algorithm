@@ -44,8 +44,12 @@ int main(){
 
     /*
     result:
-    address = 000000000061FE00, data = 7 next = 000000000061FDF0
-    address = 000000000061FDF0, data = 3 next = 000000000061FDE0
-    address = 000000000061FDE0, data = 14 next = 0000000000000000
+    Number of nodes: 3
+    Data for node 1: 10
+    Data for node 2: 15
+    Data for node 3: 20
+    address = 00000000007D7BE0, data = 10 next = 00000000007D7C00
+    address = 00000000007D7C00, data = 15 next = 00000000007D7C20
+    address = 00000000007D7C20, data = 20 next = 0000000000000000
     */
 }
