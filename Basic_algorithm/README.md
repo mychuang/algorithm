@@ -20,10 +20,10 @@
                           {23, 23, 23}}}
   ```
 - Linked List: 由許多相同資料型態的項目，依照特定順序排列而成的線性串列，在記憶體中是不連續、隨機的方式儲存。<p>
-Tips: node(節點)來記錄、表示、儲存資料(data)，每個node中的pointer指向下一個node。<p>
+Tips: node(節點)來記錄、表示、儲存資料(data)，每個node中的pointer指向下一個node。<br>
 <img src="./linkedList.png" width="800px" />
 
-- Stack: 是一種後進先出(Last In, First Out, LIFO)的資料結構。其特性如下:<p>
+- Stack: 是一種後進先出(Last In, First Out, LIFO)的資料結構。其特性如下:<br>
 <img src="./stack.png" width="800px" />
 Refer: https://www.cs.usfca.edu/~galles/visualization/StackArray.html
 
@@ -50,7 +50,8 @@ Refer: https://lakesd6531.pixnet.net/blog/post/329288496
 5. 節點的刪除: [linkList05.c](linkList05.c)
 
 - Stack<p>
-Refer: https://lakesd6531.pixnet.net/blog/post/332858496
+Refer: https://lakesd6531.pixnet.net/blog/post/332858496 <br>
+Refer: https://reurl.cc/DyglNE
 1. 使用陣列製作堆疊: [stack01.c](stack01.c)
 2. 使用鏈結串列製作堆疊: [stack02.c](stack02.c)
 3. 利用堆疊判斷輸入左右括號是否匹配: [stack03.cpp](stack03.cpp)
