@@ -25,6 +25,8 @@ Tips: node(節點)來記錄、表示、儲存資料(data)，每個node中的poin
 
 - Stack: 是一種後進先出(Last In, First Out, LIFO)的資料結構。其特性如下:<p>
 <img src="./stack.png" width="800px" />
+Refer: https://www.cs.usfca.edu/~galles/visualization/StackArray.html
+
 
 - Queue
 
@@ -47,4 +49,8 @@ Refer: https://lakesd6531.pixnet.net/blog/post/329288496
 4. 節點的搜尋與插入: [linkList04.c](linkList04.c)
 5. 節點的刪除: [linkList05.c](linkList05.c)
 
-- 1451165 
+- Stack<p>
+Refer: https://lakesd6531.pixnet.net/blog/post/332858496
+1. 使用陣列製作堆疊: [stack01.c](stack01.c)
+2. 使用鏈結串列製作堆疊: [stack02.c](stack02.c)
+3. 利用堆疊判斷輸入左右括號是否匹配: [stack03.cpp](stack03.cpp)
