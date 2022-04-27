@@ -24,7 +24,7 @@
   ```
 - Linked List: 由許多相同資料型態的項目，依照特定順序排列而成的線性串列，在記憶體中是不連續、隨機的方式儲存。對資料的刪除、插入是直接對記憶體處理，相當快速。<p>
 Tips: node(節點)來記錄、表示、儲存資料(data)，每個node中的pointer指向下一個node。<p>
-See sample [linkList.c](linkList.c)<p>
+See samples 靜態記憶體 [linkList.c](linkList.c) & 動態記憶體 [linkList02.c](linkList02.c)<p>
 <img src="./linkedList.png" width="700px" />
 
 - Stack

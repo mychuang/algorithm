@@ -1,8 +1,12 @@
+/*
+以靜態的方式來配置記憶空間給每一個節點
+*/
+
 #include <stdio.h>
 
-// 結構不能內嵌同一結構，但可內嵌指向同一結構的指標
 struct node{
     int data; //資料
+    // 結構不能內嵌同一結構，但可內嵌指向同一結構的指標
     struct node *next; //下一筆記憶體位置
 };
 typedef struct node Node;
