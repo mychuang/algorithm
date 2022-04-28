@@ -21,12 +21,12 @@
   ```
 - Linked List: 由許多相同資料型態的項目，依照特定順序排列而成的線性串列，在記憶體中是不連續、隨機的方式儲存。<p>
 Tips: node(節點)來記錄、表示、儲存資料(data)，每個node中的pointer指向下一個node。<br>
-<img src="./linkedList.png" width="800px" />
-Tips: 實作上可參考[linkList02.c](linkList02.c)，邏輯如下圖:
-  <img src="./linkListProcess.png" width="800px" />
+<img src="./linkedList.png" style="height:100px" />
+Tips: 實作上可參考[linkList02.c](linkList02.c) or [linkList02.cpp](linkList02.cpp)，邏輯如下圖:<br>
+  <img src="./linkMethod.jpg" style="height:400px" />
 
 - Stack: 是一種後進先出(Last In, First Out, LIFO)的資料結構。其特性如下:<br>
-<img src="./stack.png" width="600px" />
+<img src="./stackFlow.png" style="height:200px"/>
 Refer: https://www.cs.usfca.edu/~galles/visualization/StackArray.html
 
 
