@@ -11,7 +11,7 @@ gcc stack03.cpp -lstdc++
 
 #define MAXSTACK 5  /*定義最大堆疊容量*/
 int stack[MAXSTACK];  //堆疊的陣列宣告
-int top = -1;		//The index of the stack top
+int top = 0;		//The index of the stack top
 
 char in[MAXSTACK], ans[MAXSTACK]; //宣告輸入與輸出陣列
 int pos[MAXSTACK];
@@ -36,8 +36,8 @@ int main() {
 
             //將左括號儲存於堆疊 push
             if( in[i] == '(' ) {
-               top++;
                pos[top] = i;
+               top++;
             }
             else if( in[i] == ')' ) {
                 /*define pop */
@@ -49,11 +49,11 @@ int main() {
             }
         }
 
-        for(int i=top-1; i>=-1; i-- ){
+        for(int i=top-1; i>=0; i-- ){
             ans[pos[i]] = '^';
         }
 
-        ans[len] = NULL;
+        ans[MAXSTACK] = '\0';
         std::cout << ans << std::endl;
     }
     return 0;
@@ -61,7 +61,7 @@ int main() {
 
 //判斷是否為空堆疊, 是則傳回True
 bool isEmpty(){
-	if(top == -1){
+	if(top == 0){
 		return true; 
 	}else{
 		return false;
