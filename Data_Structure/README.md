@@ -20,14 +20,16 @@
                           {23, 23, 23}}}
   ```
 - Linked List: 由許多相同資料型態的項目，依照特定順序排列而成的線性串列，在記憶體中是不連續、隨機的方式儲存。<p>
-Tips: node(節點)來記錄、表示、儲存資料(data)，每個node中的pointer指向下一個node。<br>
-<img src="./linkedList.png" style="height:100px" /><p>
-Tips: 實作上可參考範例程式碼，邏輯如下圖:<br>
+  Tips: node(節點)來記錄、表示、儲存資料(data)，每個node中的pointer指向下一個node。<br>
+  <img src="./linkedList.png" style="height:100px" /><p>
+  Tips: 實作上可參考範例程式碼，邏輯如下圖:<br>
   <img src="./linkMethod.jpg" style="height:400px" />
 
 - Stack: 是一種後進先出(Last In, First Out, LIFO)的資料結構。其特性如下:<br>
-<img src="./stackFlow.png" style="height:200px"/>
-Refer: https://www.cs.usfca.edu/~galles/visualization/StackArray.html
+  <img src="./stackFlow.png" style="height:200px"/>
+  Refer: https://www.cs.usfca.edu/~galles/visualization/StackArray.html <br>
+  實作上，也可以搭配鏈結串列製作堆疊，概念如下: <br>
+  <img src="./stackFlow02.png" style="height:200px"/>
 
 
 - Queue
@@ -55,5 +57,5 @@ Refer: https://lakesd6531.pixnet.net/blog/post/329288496
 Refer: https://lakesd6531.pixnet.net/blog/post/332858496 <br>
 Refer: https://reurl.cc/DyglNE
 1. 使用陣列製作堆疊: [stack01.c](stack01.c)
-2. 使用鏈結串列製作堆疊: [stack02.c](stack02.c)
+2. 使用鏈結串列製作堆疊: [stack02.c](stack02.c), [stack02.cpp](stack02.cpp)
 3. 利用堆疊判斷輸入左右括號是否匹配: [stack03.cpp](stack03.cpp)
