@@ -46,8 +46,8 @@ Note: Compare array & link list<p>
 - Linked List<p>
 Refer: https://lakesd6531.pixnet.net/blog/post/329288496
 1. 靜態記憶體搭建鏈結串列: [linkList.c](linkList.c)
-2. 動態記憶體搭建鏈結串列: [linkList02.c](linkList02.c)
-3. 鏈結串列動態建立與釋放: [linkList03.c](linkList03.c)
+2. 動態記憶體搭建鏈結串列: [linkList02.c](linkList02.c), [linkList02.cpp](linkList02.cpp)
+3. 鏈結串列動態建立與釋放: [linkList03.c](linkList03.c), [linkList03.cpp](linkList03.cpp)
 4. 節點的搜尋與插入: [linkList04.c](linkList04.c)
 5. 節點的刪除: [linkList05.c](linkList05.c)
 

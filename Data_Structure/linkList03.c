@@ -13,27 +13,27 @@ typedef struct node Node;
 
 //建立鏈結串列
 Node *createList(int *arr, int len){
-    Node *first, *current, *previous;
+    Node *head, *current, *tail;
     
     for(int i=0; i<len; i++){
         current = (Node *)malloc(sizeof(Node)); //動態配置記憶體給新節點
         current->data = arr[i];
 
         if(i==0){
-            first = current;
+            head = current;
         }else{
-            previous->next = current; //把前一個的next指向目前的節點
+            tail->next = current; //把前一個的next指向目前的節點
         }
 
         current->next = NULL; //把目前的節點的next指向NULL
-        previous = current; //把前一個節點設成目前的節點
+        tail = current; //把前一個節點設成目前的節點
     }
-    return first;
+    return head;
 }
 
 //打印鏈結串列
-Node printList(Node *first){
-    Node *current = first; //設current為第一個節點
+Node printList(Node *head){
+    Node *current = head; //設current為第一個節點
     
     if(current == NULL){
         printf("List is empty! \n");
@@ -48,8 +48,8 @@ Node printList(Node *first){
 }
 
 //釋放鏈結串列記憶空間
-void freeList(Node *first){
-    Node *current = first; //設current為第一個節點
+void freeList(Node *head){
+    Node *current = head; //設current為第一個節點
     Node *tmp;
 
     /*進行迴圈，逐個釋放記憶體*/
@@ -61,17 +61,17 @@ void freeList(Node *first){
 }
 
 int main(){
-    Node *first;
+    Node *head;
     int arr[] = {7, 3, 14};
 
     //建立鏈結串列
-    first = createList(arr, 3);
+    head = createList(arr, 3);
 
     //打印鏈結串列
-    printList(first);
+    printList(head);
 
     //釋放鏈結串列記憶空間
-    freeList(first);
+    freeList(head);
     return 0;
 
     /*

@@ -16,7 +16,7 @@ int main(){
     printf("Number of nodes: ");
     scanf("%d", &num);
     
-    Node *first,*current,*previous;
+    Node *head, *current, *tail;
     for(int i=0; i<num; i++){
         current = (Node *)malloc(sizeof(Node)); //動態配置記憶體給新節點
 
@@ -24,15 +24,15 @@ int main(){
         scanf("%d", &(current->data)); //輸入節點的data成員
 
         if(i==0){
-            first = current;
+            head = current;
         }else{
-            previous->next = current; //把前一個的next指向目前的節點
+            tail->next = current; //把前一個的next指向目前的節點
         }
         current->next = NULL; //把目前的節點的next指向NULL
-        previous = current; //把前一個節點設成目前的節點
+        tail = current; //把前一個節點設成目前的節點
     }
 
-    current = first; //設current為第一個節點
+    current = head; //設current為第一個節點
     while(current != NULL){
         printf("address = %p, ", current); //印出節點的位址
         printf("data = %d ", current->data); //印出節點的資料 
